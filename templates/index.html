@@ -1,27 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
     <title>oceo</title>
-    
+
     <!--font-->
-  <!--  <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
     <!-- CSS-->
-    <link rel="stylesheet" type="text/css" href="/static/main.css">
-   
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+
     <!-- boos-->
-  <!-- <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
     <!--srcollrev-->
-   <!-- <script src="https://unpkg.com/scrollreveal"></script>-->
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
-<body>
-    <p id="c" >hola aa mundo</p>
-   
-  
-    
+
+<body class="body">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand " href="#"><h1>NAVWEB</h1></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#header">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#infor">Servicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                   
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!--HEADER-->
+    <header id="header">
+        <div class="container mt-5">
+            <div class="row">
+                <!--primera caja-->
+                <div class="col-md-6">
+
+                    <div class="header-content-left">
+                        <img src="{{ url_for('static', filename='images/roseta.png') }}" style="width: 100%;">
+                    </div>
+
+                </div>
+                <!--segunda caja-->
+                <div class="col-md-6 mt-5">
+                    <div class="header-content-right">
+                        <h2>Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. .</h2>
+                <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur adipisci facilis eaque, dolore voluptates fuga qui impedit ab cupiditate enim corrupti error ea provident, excepturi libero quod ipsa sint nesciunt.</p>
+                <a href="#" class="btn btn-outline-secondary btn-lg mt-3 header-btn">Leer Más</a>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    <!--Testimonio-->
+    <section id="testi" class="testim">
+        <div class="container mt-5">
+            <p class="mb-2 mt-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias tempora harum consectetur sint, inventore nihil perferendis excepturi saepe architecto, nobis hic accusamus exercitationem ipsum ullam est? Pariatur quaerat rerum esse?
+
+            </p>
+            <p  id='c'>-Juanito Alimaña</p>
+        </div>
+
+    </section>
+    <!--informacion-->
+    <section id="infor">
+        <div class="container">
+            <!--fila-->
+            <div class="row mt-5">
+                <!--caja uno-->
+
+                <div class="col-md-6">
+                    <div class="info-left">
+                        <img src="{{ url_for('static', filename='images/micro.png') }}" alt="sonar" style="width: 100%;">
+                    </div>
+        
+                    
+
+                </div>
+                <!--caja dos-->
+                <div class="col-md-6 my-auto">
+                    <div class="info-right"  >
+                        <h2>Lorem ipsum dolor sit.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel fugiat accusantium quasi et quisquam labore libero fuga deleniti. Pariatur porro fugit, libero placeat et ipsum harum similique doloremque nostrum eaque.
+
+                        </p>
+                        <a href="#" class="btn btn-outline-secondary btn-lg">Leer Más</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--relleno-->
+    <section id="info-dos">
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-md-6">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sint, excepturi in voluptatibus beatae eveniet maxime nostrum dolorem neque explicabo ullam, quibusdam distinctio consectetur aliquam architecto. Quasi laborum magni in.
+                    </p>
+                </div>
+
+                <div class="col-md-6">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sint, excepturi in voluptatibus beatae eveniet maxime nostrum dolorem neque explicabo ullam, quibusdam distinctio consectetur aliquam architecto. Quasi laborum magni in.
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <form class="card mt-2">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <input type="text" placeholder="Nombre" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje" class="form-control"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-outline-secondary btn-block" >Enviar</button>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
 </body>
- 
-<!-- <script src="static/js/jquery.js"></script>
- <script src="static/js/bootstrap.js"></script>-->
+<!--Boostrap-->
+<script src="static/js/jquery.js"></script>
+<script src="static/js/bootstrap.js"></script>
+<!--S Scroll-->
+<script>
+    window.sr = ScrollReveal();
+    sr.reveal('.navbar',{
+        duration : 2000,
+        origin : 'bottom'
+
+    });
+    sr.reveal('.header-content-left',{
+        duration : 2000,
+        origin : 'top',
+        distance: '300px'
+
+    });
+    sr.reveal('.header-content-right',{
+        duration : 2000,
+        origin : 'right',
+        distance: '300px'
+
+    });
+    sr.reveal('.header-btn',{
+        duration : 2000,
+        origin : 'bottom',
+        distance: '300px',
+        delay: 1000
+
+    });
+    sr.reveal('.testim',{
+        duration : 2000,
+        origin : 'left',
+        distance: '300px',
+        viewFactor:0.2
+
+    });
+    //smoth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
+
 </html>
